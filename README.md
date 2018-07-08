@@ -6,9 +6,14 @@ An api is exposed which consumes json message and publishes into kafka topic
 
 `docker-compose up`
 
+## To build application image
+
+`docker build --no-cache -t sample_kafka:0.0.1 . -f docker\Dockerfile`
+
 ## TO create a topic:
 
 `bin/kafka-topics.sh --create --zookeeper zookeeper:2181 --replication-factor 1 --partitions 1 --topic test`
+
 
 ## To start a producer:
 
